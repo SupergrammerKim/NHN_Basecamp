@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+<body>
+    <!-- HTML -->
+    <!-- <div id="myContents">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+    </div> -->
+    <h1>TODO LIST</h1>
+    <input type="text" id="test_input" />
+    <button id="test_button">TEST BUTTON</button>
+    <p id="counter"></p>
+    <button id="all">전체</button>
+    <button id="todo">활성</button>
+    <button id="complete">완료</button>
+
+    <ul id="test_ul">
+    </ul>
+
+    <!--- Script -->
+    <script src="./JSTraining1.js"></script>
+    <!-- <script>
+        alert("Hello World!!!");
+    </script> -->
+</body>
+</html>
+
+<style>
+    .complete {
+        text-decoration: line-through;
+        color: gray;
+    }
+
+    .hideComplete li.complete {display: none}
+    .hideIncomplete li:not(.complete) {display: none}
+</style>
