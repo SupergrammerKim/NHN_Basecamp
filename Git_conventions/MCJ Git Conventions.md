@@ -1,4 +1,4 @@
-# MCJ Git Conventions
+# Git Conventions
 
 ---
 

@@ -1,0 +1,56 @@
+<footer id="footer">
+    <aboutus id="aboutus">
+        <span class="footer_1">About Us...</span>
+        <div>
+            <p class="footer_2">김현철 HyeonCheol Kim, 이대진 DaeJin Lee<p>
+            <p class="footer_2">박경원 Kyeong-Won Park, 조준호 JunHo Cho</p>
+        </div>
+        <div>
+            <p class="footer_3">Copyright © 2021. RookieSwan. All rights reserved.</p>
+        </div>
+    </aboutus>
+    <logo>
+        <img src="./Assets/Logo1_light.png" />
+    </logo>
+</footer>
+
+<style>
+#footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    padding: 20px;
+    height: var(--footer-height);
+    top: var(--padding-default);
+    right : var(--padding-default);
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: repeat-y;
+    overflow: hidden;
+}
+#footer span, #footer p {
+    color: white;
+}
+#footer .footer_1 {
+    font-size: 40px;
+    margin-right: 30px;
+}
+#footer .footer_2 {
+    font-size: 20px;
+    margin-right: 30px;
+}
+#footer .footer_3 {
+    font-size: 15px;
+}
+#footer #aboutus {
+    display: flex;
+    align-items: center;
+}
+#footer img {
+    width: 300px;
+}
+</style>
