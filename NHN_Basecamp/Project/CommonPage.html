@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -11,44 +11,21 @@
 
     <!-- Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" type="text/css" href="./CommonPage.css" />
 </head>
 
 <body>
-    <background id="background">
-        <contents include-html="./Contents.html"></contents>
+    <background id="default_bg">
+        <!-- Page -->
+        <commonpage id="common_page">
+            <header include-html="./Header.html"></header>
+        </commonpage>
         <footer include-html="./Footer.html"></footer>
     </background>
 </body>
+
 </html>
 
 <script src="./includeHTML.js"></script>
-
-<style>
-    :root {
-        --padding-default: 60px;
-        --footer-height: 200px;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-
-        box-sizing: border-box;
-
-        font-family: 'Gugi', cursive;
-    }
-
-    #background {
-        display: block;
-        justify-content: center;
-
-        width: 100vw;
-        min-height: 100vh;
-        padding: var(--padding-default);
-
-        background-image: url(./Assets/default_background.jpg);
-        background-repeat: repeat-y;
-        background-attachment: fixed;
-        overflow: hidden;
-    }
-</style>
